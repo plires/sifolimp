@@ -1,0 +1,9 @@
+/* Variables */
+:root {
+  --primary-color: rgba(226, 17, 24, 1);
+  --secondary-color: rgba(250, 250, 250, 1);
+
+  /* Bootstrap */
+  --bs-breadcrumb-divider: '>';
+}
+/* Variables end */

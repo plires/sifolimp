@@ -1,0 +1,175 @@
+.home header .video-player {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('/img/home/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+
+.home header .video {
+  display: none;
+}
+
+.home header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.home header .frase {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.home header .frase h1 {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.home header .frase h1 span {
+  position: relative;
+}
+
+.home header .frase h1 span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  left: 0;
+  bottom: 3px;
+  background: var(--primary-color);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.home header .frase p {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .home header .frase h1 {
+    font-size: 3.5rem;
+  }
+
+  .home header .frase p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .home header .video {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .home header .frase h1 {
+    font-size: 4rem;
+  }
+
+  .home header .frase h1 span::after {
+    height: 6px;
+    bottom: 3px;
+  }
+
+  .home header .frase p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home header .video-player {
+    height: calc(100vh - 77px);
+  }
+
+  .home header .frase {
+    position: relative;
+    left: 0;
+    width: 100%;
+    align-items: flex-start;
+    max-width: calc(800px - 24px);
+    margin: auto;
+  }
+
+  .home header .frase h1 {
+    font-size: 4.5rem;
+    text-align: left;
+    line-height: 1;
+  }
+
+  .home header .frase h1 span::after {
+    bottom: 9px;
+  }
+
+  .home header .frase p {
+    text-align: left;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home header .frase {
+    max-width: calc(950px - 24px);
+  }
+
+  .home header .frase h1 span::after {
+    height: 7px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .home header .frase {
+    max-width: calc(1100px - 24px);
+  }
+
+  .home header .frase h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+}

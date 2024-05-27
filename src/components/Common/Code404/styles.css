@@ -1,0 +1,48 @@
+.code_404 {
+  height: calc(100vh - 453px);
+}
+
+.code_404 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.code_404 svg {
+  font-size: 10rem;
+}
+
+.code_404 a {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+.code_404 a:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+  border: solid 1px var(--primary-color);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .code_404 {
+    height: calc(100vh - 252px);
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

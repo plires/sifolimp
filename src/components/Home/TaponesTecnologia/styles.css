@@ -1,0 +1,114 @@
+.home .tapones {
+  margin-bottom: 60px;
+}
+
+.home .tapones .content_text {
+  text-align: center;
+}
+
+.home .tapones h2 {
+  text-align: left;
+}
+
+.home .tapones .detalles {
+  text-align: center;
+}
+
+.home .tapones .detalles .principal {
+  max-width: 200px;
+}
+
+.home .tapones .detalles .content_detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .tapones .detalles .content_detalle img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  max-width: 130px;
+  margin: 30px auto 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 7px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .home .tapones .content_text {
+    text-align: left;
+  }
+
+  .home .tapones .content_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home .tapones .content_text h2 {
+    padding-left: 0;
+    font-size: 1.54rem;
+    color: var(--primary-color);
+  }
+
+  .home .tapones .content_text h2::before {
+    display: none;
+  }
+
+  .home .tapones .detalles {
+    display: flex;
+  }
+
+  .home .tapones .detalles .content_detalle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home .tapones .detalles .principal {
+    width: 100%;
+  }
+
+  .home .tapones .detalles .content_detalle img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .home .tapones .content_text p {
+    font-size: 1.25rem;
+  }
+
+  .home .tapones .detalles .principal {
+    max-width: 250px;
+  }
+
+  .home .tapones .detalles .content_detalle img {
+    max-width: 160px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .home .tapones .detalles .principal {
+    max-width: 300px;
+  }
+
+  .home .tapones .detalles .content_detalle img {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 1600px) {
+}

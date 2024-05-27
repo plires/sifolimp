@@ -1,0 +1,31 @@
+.products .filter {
+  display: none !important;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .products .filter {
+    display: inline-block !important;
+  }
+
+  .products .filter select {
+    font-size: 0.85rem;
+    color: grey;
+    height: 38px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

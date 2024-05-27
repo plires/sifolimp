@@ -1,0 +1,41 @@
+.home .cuadricula_der {
+  display: none;
+}
+
+.home .cuadricula_izq_small {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .home .cuadricula_der {
+    display: flex;
+    position: absolute;
+    right: -250px;
+    top: 30%;
+    z-index: 0;
+  }
+
+  .home .cuadricula_izq_small {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

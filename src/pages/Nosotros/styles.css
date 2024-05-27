@@ -1,0 +1,62 @@
+.nosotros .cuadricula_der {
+  display: none;
+}
+
+.nosotros .cuadricula_izq_small {
+  display: none;
+}
+
+.nosotros h3 {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.nosotros p span {
+  font-weight: 900;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .nosotros h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros .cuadricula_der {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 365px;
+    z-index: 0;
+  }
+
+  .nosotros h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .nosotros .cuadricula_izq_small {
+    display: flex;
+    position: absolute;
+    left: 75px;
+    bottom: 325px;
+    z-index: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    z-index: 0;
+  }
+}

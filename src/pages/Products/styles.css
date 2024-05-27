@@ -1,0 +1,48 @@
+.products {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(249, 249, 249, 1) 64%,
+    rgba(241, 241, 241, 1) 100%
+  ) !important;
+}
+
+.products .not_found {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.products .not_found h3 {
+  font-style: italic;
+  font-size: 1.125rem;
+  color: gray;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .products .products_list,
+  .products .not_found {
+    min-height: 503px;
+  }
+
+  .products .not_found ~ .products_list {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

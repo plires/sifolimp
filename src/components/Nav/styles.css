@@ -1,0 +1,218 @@
+.navigator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 10;
+}
+
+.navigator .content_brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navigator .content_brand img {
+  max-width: 65%;
+}
+
+.navigator .content_brand .btn_menu {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navigator .content_mobile {
+  padding: 0;
+}
+
+.navigator .content_mobile nav {
+  position: absolute;
+  width: 85%;
+  height: 100vh;
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: -100%;
+  transition-delay: 0.3s;
+  opacity: 0;
+}
+
+.navigator .content_mobile nav li {
+  padding-bottom: 30px;
+}
+
+.navigator .content_mobile nav li:last-child {
+  padding-bottom: 0;
+}
+
+.navigator .content_mobile nav a {
+  color: #505050;
+  font-size: 2.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.navigator .content_mobile nav a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: var(--primary-color);
+  transition: all ease-in-out 0.3s;
+  transition-delay: 0.1s;
+}
+
+.navigator.fixed .content_mobile nav a:after {
+  bottom: -2px;
+  height: 2px;
+}
+
+.navigator .content_mobile nav a.active {
+  color: var(--primary-color);
+}
+
+.navigator .content_mobile nav a:hover {
+  color: var(--primary-color);
+}
+
+.navigator .content_mobile nav a:hover::after {
+  width: 100%;
+}
+
+.navigator .content_mobile nav.open {
+  right: 0;
+  opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .navigator {
+    position: relative;
+    background: white;
+    border-bottom: solid 3px var(--primary-color);
+  }
+
+  .navigator.prevFixed {
+    top: -100%;
+  }
+
+  .navigator.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+  }
+
+  .navigator .content_brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navigator .content_brand .btn_menu {
+    display: none;
+  }
+
+  .navigator .content_brand img {
+    max-width: 100%;
+  }
+
+  .navigator.fixed .content_brand img {
+    max-width: 80px;
+  }
+
+  .navigator .content_mobile {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigator .content_mobile nav {
+    position: relative;
+    width: auto;
+    height: auto;
+    background: transparent;
+    right: inherit;
+    opacity: 1;
+  }
+
+  .navigator .content_mobile nav ul {
+    width: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navigator .content_mobile nav li {
+    padding-bottom: 0;
+  }
+
+  .navigator .content_mobile nav ul a {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-right: 60px;
+  }
+
+  .navigator.fixed .content_mobile nav ul a {
+    font-size: 1rem;
+    margin-right: 40px;
+  }
+
+  .navigator .content_mobile nav ul li:last-child a {
+    margin-right: 0;
+  }
+
+  .navigator .content_mobile nav a.active {
+    color: black;
+    font-weight: 900;
+  }
+
+  .navigator .content_mobile nav a:hover {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    color: var(--primary-color);
+  }
+
+  .navigator.fixed .content_mobile nav a {
+    color: white;
+  }
+
+  .navigator.fixed .content_mobile nav a.active {
+    color: var(--primary-color);
+  }
+
+  .navigator.fixed .content_mobile nav a:hover {
+    color: var(--primary-color);
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

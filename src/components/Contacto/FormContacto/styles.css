@@ -1,0 +1,38 @@
+.contactos .content_all_form {
+  margin-bottom: 60px;
+}
+
+.contactos .content_all_form h2 {
+  margin-bottom: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contactos .content_all_form .form-control {
+    margin-bottom: 25px;
+  }
+
+  .contactos .content_all_form #send {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .contactos .content_all_form .error {
+    margin-top: -22px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

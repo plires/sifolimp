@@ -1,0 +1,17 @@
+.share h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.share button {
+  margin-right: 10px;
+}
+
+.share button:last-child {
+  margin-right: 0;
+}
+
+.share button:hover circle {
+  fill: grey !important;
+}

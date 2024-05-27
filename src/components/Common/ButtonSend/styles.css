@@ -1,0 +1,24 @@
+#send {
+  width: 100%;
+  background: black !important;
+  color: white !important;
+  font-style: normal;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#send svg {
+  margin-left: 10px;
+}
+
+#send:hover {
+  background: var(--primary-color) !important;
+}
+
+#send:hover svg {
+  transform: translate(15px);
+  -webkit-transform: translate(15px);
+  -moz-transform: translate(15px);
+  -ms-transform: translate(15px);
+  -o-transform: translate(15px);
+}

@@ -1,0 +1,32 @@
+.home .featured_products {
+  border-bottom: solid 5px var(--primary-color);
+  padding-bottom: 30px;
+}
+
+.home .featured_products .content_product {
+  padding: 5px;
+}
+
+.home .featured_products .slick-prev::before,
+.slick-next::before {
+  color: var(--primary-color);
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}

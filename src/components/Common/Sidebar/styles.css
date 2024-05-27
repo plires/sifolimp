@@ -1,0 +1,147 @@
+.sidebar {
+  margin-bottom: 60px;
+}
+
+.sidebar h2 {
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+
+.sidebar h2::before {
+  display: none;
+}
+
+.sidebar h2 button {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: black;
+}
+
+.sidebar .accordion-button.active:not(.collapsed),
+.sidebar .accordion-button.active.collapsed {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.sidebar .accordion-button:not(.collapsed),
+.sidebar .accordion-button.collapsed {
+  background-color: transparent;
+}
+
+.sidebar .accordion-button:focus {
+  box-shadow: none;
+}
+
+.sidebar .accordion-body {
+  padding-left: 20px;
+}
+
+.sidebar .accordion-body li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.sidebar .accordion-body li.active {
+  color: white;
+  background: var(--primary-color);
+}
+
+.sidebar .accordion-body li:hover {
+  color: white;
+  background: var(--primary-color);
+}
+
+.sidebar .accordion-body li:last-child {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: sticky;
+    top: 85px;
+    z-index: 1;
+    padding: 15px;
+  }
+
+  .sidebar.fixed {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .sidebar .accordion-item {
+    border: none;
+    background: transparent;
+    margin-bottom: 50px;
+  }
+
+  .sidebar .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar .accordion-button {
+    position: relative;
+    background: transparent !important;
+    color: black !important;
+    font-weight: 900;
+    padding: 0;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+  }
+
+  .sidebar .accordion-button::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary-color);
+  }
+
+  .sidebar .accordion-body {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .sidebar .accordion-body li {
+    color: #666666;
+  }
+
+  .sidebar .accordion-body li.active {
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: 900;
+  }
+
+  .sidebar .accordion-body li:hover {
+    color: var(--primary-color) !important;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
